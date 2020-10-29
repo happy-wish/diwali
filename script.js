@@ -29,7 +29,7 @@ q_img = [
      "https://dl.dropbox.com/s/7kghqld1jzdwxso/quote6.jpg?row=0"
 ];
 var from="from";
-name = $_GET['from'] || "No Name Yet";
+name = $_GET[from] || "No Name Yet";
 $(document).ready(function() {
      addName();
      $("#send").click(function() {
