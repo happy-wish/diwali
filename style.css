@@ -62,11 +62,11 @@ body {
 }
 .text span:nth-child(2n+1) {
      color: magenta;
-     animation: col_change2s linear infinite;
+     animation: col_change 2s linear infinite;
 }
 .text span:nth-child(2n) {
      color: green;
-     animation: col_change2s linear infinite;
+     animation: col_change 2s linear infinite;
      animation-delay: 1s;
 }
 @keyframes col_change {
