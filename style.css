@@ -131,10 +131,10 @@ body {
 
 @keyframes marquee {
      0% {
-          top: 0vh;
+          top:0vh;
      }
      100% {
-          top: -30vh;
+          top:-30vh;
      }
 }
 .w-share {
