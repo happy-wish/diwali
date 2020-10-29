@@ -30,7 +30,7 @@ q_img = [
 ];
 var from="from";
 name = $_GET(from) || "No Name Yet";
-name=decodeURI(name)
+name=decodeURI(name);
 $(document).ready(function() {
      addName();
      $("#send").click(function() {
