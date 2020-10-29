@@ -60,7 +60,7 @@ function getFullData() {
 function addName() {
      $(".text").html("<span>"+name.split("").join("</span><span>")+"</span>");
      $(".w-share").click(function() {
-          location.href = "https://wa.me/?text=💐 "+name+" Ne Apke Liye Kuch Bheja hai🥀\n Is Link per Jake Dekhe \n\n\n"+location.href+"?"+from+"="+name;
+          location.href = "https://wa.me/?text=💐 "+name+" Ne Apke Liye Kuch Bheja hai🥀\n Is Link per Jake Dekhe \n\n\n"+location.href.split("?")[0]+"?"+from+"="+name;
      })
 }
 function $_GET(q, s) {
