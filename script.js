@@ -21,6 +21,9 @@ var quote = [`दीप से दीप जले तो हो दीपाव
      ऐसा शुभ दीपावली का आपका त्यौहार हो…<br>
      Happy Diwali`
 ];
+console.error=function(k){
+     alert(k)
+}
 q_img = [
      "https://dl.dropbox.com/s/s3kxawohdkk2qtw/quote1.jpg?row=0",
      "https://dl.dropbox.com/s/2z318rhyj6vpnz8/quote2.jpg?row=0",
