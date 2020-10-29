@@ -30,8 +30,6 @@ q_img = [
      "https://dl.dropbox.com/s/7kghqld1jzdwxso/quote6.jpg?row=0"
 ];
 
-//alert(name)
-name=name.replace(/./g," ").replace(/%20/g," ");
 $(document).ready(function() {
      addName();
 name =location.href.split("?")[1].split(from+"=")[1]||"no name";
