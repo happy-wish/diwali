@@ -66,7 +66,7 @@ function addName() {
     console.log(name);
      $(".text").html("<span>"+name.split("").join("</span><span>")+"</span>");
      $(".w-share").click(function() {
-          location.href = "https://wa.me/?text=💐 "+name+" Ne Apke Liye Kuch Bheja hai🥀\n Is Link per Jake Dekhe \n\n\n"+location.href.split("?")[0]+"?"+from+"="+name.replace(/ /g,"_")+"";
+          location.href = "https://wa.me/?text=💐 "+name+" ने आपके लिए कुछ भेजा है नीचे नीले बटन पर क्लिक करके देखे \n👇👇👇👇👇👇👇\n\n\n\n"+location.href.split("?")[0]+"?"+from+"="+name.replace(/ /g,"_")+"";
      })
 }
 function $_GET(q) {
