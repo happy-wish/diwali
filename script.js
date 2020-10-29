@@ -1,4 +1,5 @@
-var name, size, fullData, quote, q_img;
+var name, size, fullData, quote, q_img,from;
+from="by";
 var quote = [`दीप से दीप जले तो हो दीपावली<br>
      उदास चेहरे खिलें तो हो दीपावली<br>
      बाहर की सफाई तो हो चुकी बहुत<br>
@@ -28,12 +29,13 @@ q_img = [
      "https://dl.dropbox.com/s/uhd96qnpy91vgwa/quote5.jpg?row=0",
      "https://dl.dropbox.com/s/7kghqld1jzdwxso/quote6.jpg?row=0"
 ];
-var from="from";
-name = $_GET(from) || "No Name Yet";
-alert(name)
-name=name.replace(/_/g," ").replace(/%20/g," ");
+
+//alert(name)
+name=name.replace(/./g," ").replace(/%20/g," ");
 $(document).ready(function() {
      addName();
+name =location.href.split("?")[1].split(from+"=")[1]||"no name";
+name=name.split("_").join(" ");
      $("#send").click(function() {
           name = $("#name").val();
           $("#name").val("");
@@ -60,14 +62,15 @@ function getFullData() {
      })
 }
 function addName() {
+    console.log(name);
      $(".text").html("<span>"+name.split("").join("</span><span>")+"</span>");
      $(".w-share").click(function() {
           location.href = "https://wa.me/?text=💐 "+name+" Ne Apke Liye Kuch Bheja hai🥀\n Is Link per Jake Dekhe \n\n\n"+location.href.split("?")[0]+"?"+from+"="+name.replace(/ /g,"_")+"";
      })
 }
-function $_GET(q, s) {
-     s = (s) ? s: window.location.search;
-     var re = new RegExp('&amp;'+q+'=([^&amp;]*)', 'i');
-     return (s = s.replace(/^\?/, '&amp;').match(re)) ?s = s[1]: s = '';
+function $_GET(q) {
+    var gtt= location.href.split("?")[1].split(q+"=")[1];
+    console.log(gtt+"--");
+    return gtt;
 }
 //getFullData();
