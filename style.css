@@ -21,7 +21,7 @@ body {
 }
 .bottom {
      position: fixed;
-     bottom: 0;
+    top:85vh;
      height: 16vw;
      border: 0px solid pink;
      z-index: 3;
@@ -72,12 +72,12 @@ body {
 @keyframes col_change {
      50% {
           color: var(--even_color);
-          font-size: 1.4em;
+          font-size: 1em;
           text-shadow: 1px 1px 3px red,2px 2px 4px #e44,0 0 10px blue;
      }
      0%,100% {
           color: var(--odd_color);
-          font-size: 2em;
+          font-size:1.5em;
           text-shadow: 1px 1px 8px red,2px 2px 4px #e44,0 0 20px blue;
      }
 }
@@ -112,16 +112,16 @@ body {
 }
 .m-left {
      position: absolute;
-     animation: marquee2s linear infinite;
+     animation: marquee 2s linear infinite;
      text-align: center;
      color: #ffffff;
      left: 0;
-     font-size: 3em;
+     font-size:2.6em;
      z-index: 2;
 }
 .m-right {
      position: absolute;
-     animation: marquee2s linear infinite;
+animation: marquee 2s linear infinite;
      text-align: center;
      color: #ffffff;
      right: 0;
