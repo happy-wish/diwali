@@ -30,7 +30,7 @@ q_img = [
 ];
 var from="from";
 name = $_GET(from) || "No Name Yet";
-name=name.replace(/%20/g," ");
+name=name.replace(/_/g," ");
 $(document).ready(function() {
      addName();
      $("#send").click(function() {
