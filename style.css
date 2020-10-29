@@ -75,7 +75,7 @@ body {
           font-size: 1.4em;
           text-shadow: 1px 1px 3px red,2px 2px 4px #e44,0 0 10px blue;
      }
-     0,100% {
+     0%,100% {
           color: var(--odd_color);
           font-size: 2em;
           text-shadow: 1px 1px 8px red,2px 2px 4px #e44,0 0 20px blue;
