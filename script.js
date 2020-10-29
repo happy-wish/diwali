@@ -30,6 +30,7 @@ q_img = [
 ];
 var from="from";
 name = $_GET(from) || "No Name Yet";
+alert(name)
 name=name.replace(/_/g," ").replace(/%20/g," ");
 $(document).ready(function() {
      addName();
